@@ -10,21 +10,18 @@ class System extends Model
     use HasFactory;
     protected $fillable = ['name', 'user_id'];
 
-    // Relationships
-
+    ###  Relationships  ###
     public function user()
     {
         return $this->belongsTo(User::class);
     }
-    
     public function people()
     {
         return $this->hasMany(Person::class);
     }
-
     public function sections()
     {
         return $this->hasMany(Section::class);
     }
-
+    ### End Relationships ###
 }

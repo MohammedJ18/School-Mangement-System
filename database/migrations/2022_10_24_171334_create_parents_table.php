@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('parents', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('person_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

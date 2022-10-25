@@ -2,11 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Student;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class StudentSeeder extends Seeder
+class ParentStudentSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,10 +14,6 @@ class StudentSeeder extends Seeder
      */
     public function run()
     {
-        Student::create([
-            'group_id' => 1,
-            'person_id' => 1,
-            'section_id' => 1,
-        ]);
+        //
     }
 }

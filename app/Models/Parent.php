@@ -8,14 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Parent extends Model
 {
     use HasFactory;
-
+    protected $fillable = [
+        'person_id',
+    ];
+    ###  Relationships  ###
     public function students()
     {
-        return $this->belongsToMany(Student::class);
+        return $this->belongsToMany(Student::class, 'parent_students');
     }
-    
     public function person()
     {
         return $this->belongsTo(Person::class);
     }
+    ###  End Relationships  ###
 }

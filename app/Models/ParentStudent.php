@@ -5,21 +5,21 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Subject extends Model
+class ParentStudent extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name',
-        'section_id',
+        'parent_id',
+        'student_id',
     ];
     ###  Relationships  ###
-    public function section()
+    public function parent()
     {
-        return $this->belongsTo(Section::class);
+        return $this->belongsTo(Parent::class);
     }
-    public function grades()
+    public function student()
     {
-        return $this->hasMany(Grade::class);
+        return $this->belongsTo(Student::class);
     }
     ###  End Relationships  ###
 }

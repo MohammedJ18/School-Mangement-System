@@ -23,12 +23,7 @@ class User extends Authenticatable
         'password',
     ];
 
-    //  Relationships
-    public function systems()
-    {
-        return $this->hasMany(System::class);
-    }
-
+    
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -38,7 +33,7 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-
+    
     /**
      * The attributes that should be cast.
      *
@@ -47,4 +42,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    ###  Relationships  ###
+    public function systems()
+    {
+        return $this->hasMany(System::class);
+    }
+    ### End Relationships ###
 }

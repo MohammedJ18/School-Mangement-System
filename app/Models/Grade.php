@@ -13,16 +13,14 @@ class Grade extends Model
         'subject_id',
         'grade',
     ];
-
-
+    ###  Relationships  ###
     public function student()
     {
         return $this->belongsTo(Student::class);
     }
-
-
     public function subject()
     {
         return $this->belongsTo(Subject::class);
     }
+    ###  End Relationships  ###
 }
