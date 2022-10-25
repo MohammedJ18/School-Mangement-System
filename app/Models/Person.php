@@ -19,4 +19,26 @@ class Person extends Model
         'address',
         'type',
     ];
+
+    // Relationships
+    public function absences()
+    {
+        return $this->hasMany(Absence::class);
+    }
+
+    public function teacher()
+    {
+        return $this->hasOne(Teacher::class);
+    }
+
+    public function parent()
+    {
+        return $this->hasOne(Parent::class);
+    }
+
+    public function student()
+    {
+        return $this->hasOne(Student::class);
+    }
+
 }

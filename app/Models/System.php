@@ -9,4 +9,15 @@ class System extends Model
 {
     use HasFactory;
     protected $fillable = ['name', 'user_id'];
+
+    // Relationships
+    public function people()
+    {
+        return $this->hasMany(Person::class);
+    }
+
+    public function sections()
+    {
+        return $this->hasMany(Section::class);
+    }
 }

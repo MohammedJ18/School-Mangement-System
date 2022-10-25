@@ -14,4 +14,20 @@ class Student extends Model
         'person_id',
         'section_id',
     ];
+
+    // Relationships
+    public function grades()
+    {
+        return $this->hasMany(Grade::class);
+    }
+
+    public function section()
+    {
+        return $this->hasOne(Section::class);
+    }
+
+    public function group()
+    {
+        return $this->hasOne(Group::class);
+    }
 }

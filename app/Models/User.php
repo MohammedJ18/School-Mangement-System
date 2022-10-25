@@ -23,6 +23,12 @@ class User extends Authenticatable
         'password',
     ];
 
+    //  Relationships
+    public function systems()
+    {
+        return $this->hasMany(System::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *

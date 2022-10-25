@@ -12,4 +12,15 @@ class Section extends Model
         'name',
         'system_id',
     ];
+
+    // Relationships
+    public function groups()
+    {
+        return $this->hasMany(Group::class);
+    }
+
+    public function subjects()
+    {
+        return $this->hasMany(Subject::class);
+    }
 }
