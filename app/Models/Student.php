@@ -21,13 +21,23 @@ class Student extends Model
         return $this->hasMany(Grade::class);
     }
 
-    public function section()
-    {
-        return $this->hasOne(Section::class);
-    }
-
     public function group()
     {
         return $this->hasOne(Group::class);
+    }
+
+    public function section()
+    {
+        return $this->belongsTo(Section::class);
+    }
+    //many to many
+    public function parents()
+    {
+        return $this->belongsToMany(Parent::class);
+    }
+    
+    public function person()
+    {
+        return $this->belongsTo(Person::class);
     }
 }

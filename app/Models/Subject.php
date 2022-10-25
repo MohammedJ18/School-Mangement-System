@@ -12,4 +12,14 @@ class Subject extends Model
         'name',
         'section_id',
     ];
+
+    public function section()
+    {
+        return $this->belongsTo(Section::class);
+    }
+
+    public function grades()
+    {
+        return $this->hasMany(Grade::class);
+    }
 }

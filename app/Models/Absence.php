@@ -13,4 +13,10 @@ class Absence extends Model
         'date',
         'reason',
     ];
+
+    public function person()
+    {
+        return $this->belongsTo(Person::class);
+    }
+    
 }

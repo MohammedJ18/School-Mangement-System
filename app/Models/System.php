@@ -11,6 +11,12 @@ class System extends Model
     protected $fillable = ['name', 'user_id'];
 
     // Relationships
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    
     public function people()
     {
         return $this->hasMany(Person::class);
@@ -20,4 +26,5 @@ class System extends Model
     {
         return $this->hasMany(Section::class);
     }
+
 }

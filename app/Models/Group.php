@@ -12,4 +12,9 @@ class Group extends Model
         'name',
         'section_id',
     ];
+   
+    public function section()
+    {
+        return $this->belongsTo(Section::class);
+    }
 }

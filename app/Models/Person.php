@@ -21,6 +21,14 @@ class Person extends Model
     ];
 
     // Relationships
+
+
+
+    public function system()
+    {
+        return $this->belongsTo(System::class);
+    }
+    
     public function absences()
     {
         return $this->hasMany(Absence::class);
@@ -40,5 +48,5 @@ class Person extends Model
     {
         return $this->hasOne(Student::class);
     }
-
+  
 }
