@@ -5,19 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Absence extends Model
+class TeacherAbsence extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'person_id',
+        'teacher_id',
         'date',
         'reason',
+        'user_id',
     ];
     ###  Relationships  ###
-    public function person()
+    public function teacher()
     {
-        return $this->belongsTo(Person::class);
+        return $this->belongsTo(Teacher::class);
     }
-    ### End Relationships ###
-    
+    ###  End Relationships  ###
 }

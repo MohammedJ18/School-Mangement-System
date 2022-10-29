@@ -10,7 +10,7 @@ class Student extends Model
     use HasFactory;
     protected $fillable = [
         'group_id',
-        'person_id',
+        'user_id',
         'section_id',
     ];
 
@@ -31,9 +31,9 @@ class Student extends Model
     {
         return $this->belongsToMany(Parent::class, 'parent_students');
     }
-    public function person()
+    public function user()
     {
-        return $this->belongsTo(Person::class);
+        return $this->belongsTo(User::class);
     }
     ###  End Relationships  ###
 }

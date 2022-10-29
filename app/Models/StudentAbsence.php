@@ -5,20 +5,21 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Parent extends Model
+class StudentAbsence extends Model
 {
     use HasFactory;
+
     protected $fillable = [
+        'student_id',
+        'date',
+        'reason',
         'user_id',
     ];
+
     ###  Relationships  ###
-    public function students()
+    public function student()
     {
-        return $this->belongsToMany(Student::class, 'parent_students');
-    }
-    public function user()
-    {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Student::class);
     }
     ###  End Relationships  ###
 }

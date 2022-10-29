@@ -9,12 +9,12 @@ class Teacher extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'person_id',
+        'user_id',
     ];
     ###  Relationships  ###
-    public function person()
+    public function user()
     {
-        return $this->belongsTo(Person::class);
+        return $this->belongsTo(User::class);
     }
     ### End Relationships ###
 }
