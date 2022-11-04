@@ -15,10 +15,6 @@ class System extends Model
     {
         return $this->belongsTo(User::class);
     }
-    public function people()
-    {
-        return $this->hasMany(Person::class);
-    }
     public function sections()
     {
         return $this->hasMany(Section::class);
