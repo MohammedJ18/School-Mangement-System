@@ -16,7 +16,7 @@
     @livewireStyles
 </head>
 
-<body dir="rtl" class="flex font-sans antialiased h-screen w-screen bg-white">
+<body dir="rtl" class="flex font-sans antialiased h-screen  bg-white">
         {{-- @include('layouts.navigation') --}}
         <div>
             @include('livewire.components.sidebar.main')

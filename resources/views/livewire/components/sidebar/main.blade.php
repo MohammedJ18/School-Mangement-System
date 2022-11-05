@@ -1,5 +1,5 @@
 <div>
-    <aside class="w-16 h-screen overflow-auto">
+    <aside class="w-16 h-screen">
         <div class="py-4 px-3 h-full bg-secondary-100">
             <ul class="space-y-4 mt-3">
                 <li>

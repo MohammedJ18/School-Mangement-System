@@ -1,5 +1,5 @@
 <div>
-    <div class="flex">
+    <div class="flex justify-between">
         <div class="">
             <div class="flex">
                 <button class="bg-primary-100 w-40 h-10">
