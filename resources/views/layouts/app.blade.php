@@ -16,25 +16,31 @@
     @livewireStyles
 </head>
 
-<body dir="rtl" class="font-sans antialiased">
-    <div class="min-h-screen flex bg-gray-100">
+<body dir="rtl" class="flex font-sans antialiased h-screen w-screen bg-white">
         {{-- @include('layouts.navigation') --}}
-        @include('livewire.components.sidebar.main')
+        <div>
+            @include('livewire.components.sidebar.main')
+        </div>
+
 
         <!-- Page Heading -->
         @if (isset($header))
             <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 overflow-auto">
                     {{ $header }}
                 </div>
             </header>
         @endif
 
         <!-- Page Content -->
-        <main>
-            {{ $slot }}
-        </main>
-    </div>
+        <div>
+            <div class="py-7 px-10 h overflow-y-auto rounded-lg bg-white ">
+            <main>
+                    {{ $slot }}
+                </div>
+            </main>
+        </div>
+
     @livewireScripts
 </body>
 

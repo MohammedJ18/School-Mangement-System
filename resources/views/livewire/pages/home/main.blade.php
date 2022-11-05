@@ -1,6 +1,6 @@
 <div>
     <div class="flex">
-        <div class="py-7 px-10">
+        <div class="">
             <div class="flex">
                 <button class="bg-primary-100 w-40 h-10">
                     فد شي
@@ -50,11 +50,11 @@
         {{-- left side  --}}
 
 
-        <div class="mt-24 mr-10">
+        <div class="mt-9 mr-16">
             <p class="font-bold text-lg ">ألمحاضرات القادمة</p>
             <div class="border-2 mt-3">
                 <div class="mt-6 p-3">
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mt-1">
                         <div class="flex">
                             <p class="font-bold text-2xl mt-3 ml-2">08:30</p>
                             <div>
@@ -62,10 +62,10 @@
                                 <p class="text-xs text-secondary-300"> السادس العلمي</p>
                             </div>
                         </div>
-                        <div class=" h-1 w-72 mt-2 bg-red-500"></div>
+                        <div class=" h-1 w-80 mt-2 bg-red-500"></div>
                     </div>
 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mt-1">
                         <div class="flex">
                             <p class="font-bold text-2xl mt-3 ml-2">08:30</p>
                             <div>
@@ -73,10 +73,10 @@
                                 <p class="text-xs text-secondary-300"> السادس العلمي</p>
                             </div>
                         </div>
-                        <div class=" h-1 w-72 mt-2 bg-purple-500"></div>
+                        <div class=" h-1 w-80 mt-2 bg-purple-500"></div>
                     </div>
 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mt-1">
                         <div class="flex">
                             <p class="font-bold text-2xl mt-3 ml-2">08:30</p>
                             <div>
@@ -84,10 +84,10 @@
                                 <p class="text-xs text-secondary-300"> السادس العلمي</p>
                             </div>
                         </div>
-                        <div class=" h-1 w-72 mt-2 bg-green-500"></div>
+                        <div class=" h-1 w-80 mt-2 bg-green-500"></div>
                     </div>
 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mt-1">
                         <div class="flex">
                             <p class="font-bold text-2xl mt-3 ml-2">08:30</p>
                             <div>
@@ -95,10 +95,10 @@
                                 <p class="text-xs text-secondary-300"> السادس العلمي</p>
                             </div>
                         </div>
-                        <div class=" h-1 w-72 mt-2 bg-pink-500"></div>
+                        <div class=" h-1 w-80 mt-2 bg-pink-500"></div>
                     </div>
 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mt-1">
                         <div class="flex">
                             <p class="font-bold text-2xl mt-3 ml-2">08:30</p>
                             <div>
@@ -106,10 +106,10 @@
                                 <p class="text-xs text-secondary-300"> السادس العلمي</p>
                             </div>
                         </div>
-                        <div class=" h-1 w-72 mt-2 bg-gray-500"></div>
+                        <div class=" h-1 w-80 mt-2 bg-gray-500"></div>
                     </div>
 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mt-1">
                         <div class="flex">
                             <p class="font-bold text-2xl mt-3 ml-2">08:30</p>
                             <div>
@@ -117,10 +117,10 @@
                                 <p class="text-xs text-secondary-300"> السادس العلمي</p>
                             </div>
                         </div>
-                        <div class=" h-1 w-72 mt-2 bg-blue-500"></div>
+                        <div class=" h-1 w-80 mt-2 bg-blue-500"></div>
                     </div>
 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mt-1">
                         <div class="flex">
                             <p class="font-bold text-2xl mt-3 ml-2">08:30</p>
                             <div>
@@ -128,7 +128,7 @@
                                 <p class="text-xs text-secondary-300"> السادس العلمي</p>
                             </div>
                         </div>
-                        <div class=" h-1 w-72 mt-2 bg-yellow-500"></div>
+                        <div class=" h-1 w-80 mt-2 bg-yellow-500"></div>
                     </div>
                 </div>
             </div>

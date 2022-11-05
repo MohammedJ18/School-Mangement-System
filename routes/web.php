@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Pages\Home\Main as Home;
+use App\Http\Livewire\Pages\Students\Main as Students;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,5 +23,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/home', Home::class)->name('home');
+Route::get('/students', Students::class)->name('students');
 
 require __DIR__.'/auth.php';
