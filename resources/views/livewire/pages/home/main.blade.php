@@ -1,5 +1,5 @@
-<div>
-    <div class="flex justify-between">
+<div class="max-w-6xl">
+    <div class="flex">
         <div class="">
             <div class="flex">
                 <button class="bg-primary-100 w-40 h-10">
@@ -48,7 +48,6 @@
         </div>
 
         {{-- left side  --}}
-
 
         <div class="mt-9 mr-16">
             <p class="font-bold text-lg ">ألمحاضرات القادمة</p>

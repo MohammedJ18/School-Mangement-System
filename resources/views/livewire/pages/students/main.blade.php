@@ -1,4 +1,4 @@
-<div class="max-w-7xl">
+<div class="max-w-6xl">
     <p class="text-xl font-bold">الطلبة</p>
     <div class="flex mt-4">
         <div>
