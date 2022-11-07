@@ -1,6 +1,6 @@
 <div>
-    <aside class="w-16 h-screen">
-        <div class="py-4 px-3 h-full bg-secondary-100">
+    <aside class="w-16 h-screen sticky">
+        <div class="py-4 px-3 h-full bg-secondary-100 sticky">
             <ul class="space-y-4 mt-3">
                 <li>
                     <a href="#" class="flex items-center self-center p-2 hover:bg-primary-100 ">

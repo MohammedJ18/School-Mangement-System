@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Pages\Home\Main as Home;
 use App\Http\Livewire\Pages\Students\Main as Students;
+use App\Http\Livewire\Pages\Profile\Main as Profile;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,15 +15,12 @@ use App\Http\Livewire\Pages\Students\Main as Students;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/home', Home::class)->name('home');
+Route::get('/', Home::class)->middleware(['auth'])->name('home');
 Route::get('/students', Students::class)->name('students');
+Route::get('/profile', profile::class)->name('profile');
 
 require __DIR__.'/auth.php';
