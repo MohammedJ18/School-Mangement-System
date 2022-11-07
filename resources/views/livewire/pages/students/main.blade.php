@@ -1,9 +1,9 @@
-<div class="max-w-6xl">
+<div>
     <p class="text-xl font-bold">الطلبة</p>
     <div class="flex mt-4">
-        <div>
+        <div class="flex w-full">
             <input class="border-2 border-primary-100 w-96" type="text" placeholder="اسم الطالب">
-            <input class="border-2 border-primary-100 w-80 mr-16" type="text" placeholder="الصف">
+            <input class="border-2 border-primary-100 w-72 mr-16" type="text" placeholder="الصف">
         </div>
 
         <button class="bg-primary-100 w-11 h-11 mr-10 flex items-center p-2">

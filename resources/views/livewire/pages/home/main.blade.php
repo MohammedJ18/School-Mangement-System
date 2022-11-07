@@ -1,6 +1,6 @@
 <div class="max-w-6xl">
     <div class="flex">
-        <div class="">
+        <div>
             <div class="flex">
                 <button class="bg-primary-100 w-40 h-10">
                     فد شي
