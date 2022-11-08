@@ -1,5 +1,5 @@
 <div>
-    <aside class="w-16 h-screen sticky">
+    <aside class="w-16 h-screen fixed top-0 right-0">
         <div class="flex flex-col justify-between py-4 px-3 h-full bg-secondary-100 sticky">
             <ul class=" space-y-4 mt-3">
                 <li>

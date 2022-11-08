@@ -25,7 +25,7 @@
 
         <!-- Page Content -->
         <div class="w-full">
-            <div class=" py-7 px-16 w-full overflow-y-auto rounded-lg bg-white ">
+            <div class=" py-7 px-28 w-full overflow-y-auto rounded-lg bg-white ">
                 <main>
                     {{ $slot }}
             </div>
