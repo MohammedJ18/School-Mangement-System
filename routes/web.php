@@ -18,7 +18,7 @@ use App\Http\Livewire\Pages\Profile\Main as Profile;
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/', Home::class)->name('home');
     Route::get('/students', Students::class)->name('students');
-    Route::get('/profile', Profile::class)->name('profile');
+    Route::get('/profile/{$id}', Profile::class)->name('profile');
 });
 
 require __DIR__.'/auth.php';
