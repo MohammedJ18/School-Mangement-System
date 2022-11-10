@@ -21,4 +21,4 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/profile/{$id}', Profile::class)->name('profile');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
