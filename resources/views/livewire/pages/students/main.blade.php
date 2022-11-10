@@ -18,7 +18,7 @@
             </button>
         </div>
     </div>
-        <div class="grid grid-cols-3 mt-10 gap-x-8 gap-y-4">
+        <div class="grid grid-cols-3 2xl:grid-cols-4 mt-10 gap-x-8 gap-y-4">
      @foreach($students as $student)
     @include('livewire.pages.students.card',["student"=>$student])
     @endforeach
