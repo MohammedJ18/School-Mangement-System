@@ -40,9 +40,12 @@
                 </button>
             </div>
             <div>
-                @for ($i = 0; $i < 3; $i++)
-                    @include('livewire.pages.systems.system')
-                @endfor
+                <a href="">
+                    @for ($i = 0; $i < 3; $i++)
+                        @include('livewire.pages.systems.system')
+                    @endfor
+                </a>
+
             </div>
 
         </div>
