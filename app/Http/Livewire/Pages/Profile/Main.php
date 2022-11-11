@@ -9,7 +9,7 @@ class Main extends Component
 {
     public function mount($id){
         $this->student = Student::withCount("student_absences")->findOrFail($id);
-        dd($this->student->toArray());
+        //dd($this->student->toArray());
     }
     public function render()
     {   

@@ -29,7 +29,7 @@ class Student extends Model
     }
     public function parents()
     {
-        return $this->belongsToMany(Parent::class, 'parent_students');
+        return $this->belongsToMany(Guardian::class, 'parent_students');
     }
     public function user()
     {
