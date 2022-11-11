@@ -4,7 +4,7 @@
             <a href="/">
                 <x-application-logo class="w-16 h-16 fill-current text-gray-500" />
             </a>
-            <div class="mt-10">
+            <div class="mt-4">
                 <p class="text-2xl font-semibold">تسجيل الدخول</p>
             </div>
         </x-slot>
