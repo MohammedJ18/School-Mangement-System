@@ -21,7 +21,7 @@ class Student extends Model
     }
     public function group()
     {
-        return $this->hasOne(Group::class);
+        return $this->belongsTo(Group::class);
     }
     public function section()
     {

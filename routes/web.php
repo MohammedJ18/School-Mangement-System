@@ -14,13 +14,11 @@ use App\Http\Livewire\Pages\Profile\Main as Profile;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::get('/', Home::class)->middleware(['auth'])->name('home');
-Route::get('/students', Students::class)->name('students');
-Route::get('/profile', profile::class)->name('profile');
+//group by middleware
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/', Home::class)->name('home');
+    Route::get('/students', Students::class)->name('students');
+    Route::get('/profile/{$id}', Profile::class)->name('profile');
+});
 
 require __DIR__.'/auth.php';
