@@ -35,5 +35,9 @@ class Student extends Model
     {
         return $this->belongsTo(User::class);
     }
+    public function student_absences()
+    {
+        return $this->hasMany(StudentAbsence::class);
+    }
     ###  End Relationships  ###
 }
