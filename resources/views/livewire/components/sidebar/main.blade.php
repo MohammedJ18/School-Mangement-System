@@ -32,7 +32,7 @@
                 <li class="mr-1">
                     <a href="#" class="flex items-center">
                         {{-- profile image --}}
-                        <img src="https://i.pravatar.cc/150?img=1" alt=""
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPYMmIQYsXtA80h2rAHHYIgq3OgDxJ2hPRA&usqp=CAU" alt=""
                             class="w-8 h-8 rounded-full self-center">
                     </a>
                 </li>
