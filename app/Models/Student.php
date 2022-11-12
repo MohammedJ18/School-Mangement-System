@@ -29,11 +29,15 @@ class Student extends Model
     }
     public function parents()
     {
-        return $this->belongsToMany(Parent::class, 'parent_students');
+        return $this->belongsToMany(Guardian::class, 'parent_students');
     }
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+    public function student_absences()
+    {
+        return $this->hasMany(StudentAbsence::class);
     }
     ###  End Relationships  ###
 }

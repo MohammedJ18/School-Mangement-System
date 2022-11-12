@@ -2,10 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\Guardian;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ParentSeeder extends Seeder
+class GuardianSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +15,8 @@ class ParentSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Guardian::create([
+            'user_id' => 1,
+        ]);
     }
 }
