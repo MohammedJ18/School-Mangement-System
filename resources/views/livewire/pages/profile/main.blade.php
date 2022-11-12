@@ -1,17 +1,17 @@
 <div>
     <div class="flex">
         <div>
-            <img src="https://i.pravatar.cc/150?img=1" alt="" class="w-24 h-24 items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPYMmIQYsXtA80h2rAHHYIgq3OgDxJ2hPRA&usqp=CAU" alt="" class="w-24 h-24 items-center">
         </div>
         <div class="mr-5 mt-6">
             <p class="text-xl font-semibold">{{ $student->user->name }}</p>
             <p class="text-base">تاريخ الميلاد : {{ $student->user->birth_date }}</p>
             <p class="">أولياء الامور:
-                @foreach($student->parents As $parent)
+                {{-- @foreach($student->parents As $parent)
                 <lu>
                     <li><a href="#">{{$parent->user->name}}</a></li>
                 </lu>
-                @endforeach
+                @endforeach --}}
             </p>
         </div>
     </div>
