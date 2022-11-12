@@ -29,9 +29,7 @@
 
         {{-- left side  --}}
         <div class="mt-9 mr-12 w-full">
-
             @include('livewire.pages.home.next-lessons')
-
         </div>
     </div>
 </div>
