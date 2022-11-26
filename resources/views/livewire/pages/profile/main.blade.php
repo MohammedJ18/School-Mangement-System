@@ -1,4 +1,4 @@
-<div>
+<div class="">
     <div class="flex">
         <div>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPYMmIQYsXtA80h2rAHHYIgq3OgDxJ2hPRA&usqp=CAU" alt="" class="w-24 h-24 items-center">
