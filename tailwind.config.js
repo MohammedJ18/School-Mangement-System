@@ -11,7 +11,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                Tajawal: ['Tajawal', 'sans-serif'],
+                // sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
 
             // website colors
