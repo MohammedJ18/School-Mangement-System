@@ -20,7 +20,7 @@
     </div>
     <div class="grid grid-cols-3 2xl:grid-cols-4 mt-10 gap-x-8 gap-y-4">
         @foreach ($students as $student)
-            <a href="#">
+            <a href="{{ route('profile',$student->id)}}">
                 @include('livewire.pages.students.card', ['student' => $student])
             </a>
         @endforeach
