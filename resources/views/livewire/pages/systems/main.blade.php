@@ -114,14 +114,6 @@
             @include('livewire.pages.systems.info')
         </div>
     </div>
-
-
-
-
-
-
-
-
     <!-- component -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </div>
