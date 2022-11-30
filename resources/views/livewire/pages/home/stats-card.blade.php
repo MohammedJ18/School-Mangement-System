@@ -10,6 +10,4 @@
             </div>
         @endfor
     </div>
-
-
 </div>

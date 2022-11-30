@@ -12,7 +12,7 @@
             </div>
 
             <div class="mt-20">
-                @include('livewire.pages.home.stats-card')
+                <livewire:pages.home.stats-card />
             </div>
 
             <div>
@@ -29,7 +29,8 @@
 
         {{-- left side  --}}
         <div class="mt-9 mr-12 w-full">
-            @include('livewire.pages.home.next-lessons')
+            
+            @livewire('pages.home.next-lessons')
         </div>
     </div>
 </div>
