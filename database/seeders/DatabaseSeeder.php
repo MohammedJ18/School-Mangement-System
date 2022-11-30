@@ -24,6 +24,10 @@ class DatabaseSeeder extends Seeder
             GradeSeeder::class,
             GuardianSeeder::class,
             ParentStudentSeeder::class,
+            TeacherSeeder::class,
+            SystemHallSeeder::class,
+            ScheduleSeeder::class,
+            LessonSeeder::class,
         ]);
     }
 }

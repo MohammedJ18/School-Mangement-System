@@ -15,9 +15,31 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+        // id 1
         User::create([
             'name' => 'Mohammed',
             'email' => 'mohammed@gmail.com',
+            'password' => bcrypt('12121212'),
+            'birth_date' => '1999-01-01',
+        ]);
+        // id 2
+        User::create([
+            'name' => 'teacher',
+            'email' => 'teacher@gmail.com',
+            'password' => bcrypt('12121212'),
+            'birth_date' => '1999-01-01',
+        ]);
+        // id 3
+        User::create([
+            'name' => 'student',
+            'email' => 'student@gmail.com',
+            'password' => bcrypt('12121212'),
+            'birth_date' => '1999-01-01',
+        ]);
+        // id 4
+        User::create([
+            'name' => 'parent',
+            'email' => 'parent@gmail.com',
             'password' => bcrypt('12121212'),
             'birth_date' => '1999-01-01',
         ]);

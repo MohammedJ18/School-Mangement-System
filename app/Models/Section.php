@@ -30,5 +30,9 @@ class Section extends Model
     {
         return $this->belongsTo(System::class);
     }
+    public function lessons()
+    {
+        return $this->hasMany(Lesson::class);
+    }
     ### End Relationships ###
 }

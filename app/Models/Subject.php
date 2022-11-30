@@ -21,5 +21,9 @@ class Subject extends Model
     {
         return $this->hasMany(Grade::class);
     }
+    public function lessons()
+    {
+        return $this->hasMany(Lesson::class);
+    }
     ###  End Relationships  ###
 }

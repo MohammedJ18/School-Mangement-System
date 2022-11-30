@@ -19,5 +19,13 @@ class System extends Model
     {
         return $this->hasMany(Section::class);
     }
+    public function schedules()
+    {
+        return $this->hasMany(Schedule::class);
+    }
+    public function systemHalls()
+    {
+        return $this->hasMany(SystemHall::class);
+    }
     ### End Relationships ###
 }
