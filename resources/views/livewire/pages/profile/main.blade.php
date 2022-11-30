@@ -14,12 +14,12 @@
         </div>
     </div>
     <div class="mt-10">
-        @include('livewire.pages.profile.class-information')
+        @livewire('pages.profile.class-information')
     </div>
     <div>
-        @include('livewire.pages.profile.current-grades')
+        @livewire('pages.profile.current-grades')
     </div>
     <div class="mb-20">
-        @include('livewire.pages.profile.previous-record')
+        @livewire('pages.profile.previous-record')
     </div>
 </div>
