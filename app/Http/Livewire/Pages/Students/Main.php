@@ -13,7 +13,8 @@ class Main extends Component
         $this->users = User::where('type',1)->when($this->search,function($query,$search){
             return $query->where('name','LIKE',"%$search%");
         })->get();
-        // dd($this->students);
+        //if($this->search)
+       // dd($this->users->toArray());
         return view('livewire.pages.students.main');
     }
 }

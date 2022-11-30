@@ -3,10 +3,9 @@
 namespace App\Http\Livewire\Pages\Students;
 
 use Livewire\Component;
-
 class Card extends Component
-{
-    public $student;
+{   
+    public $user;
     public function render()
     {
         return view('livewire.pages.students.card');
