@@ -21,7 +21,7 @@
     <div class="grid grid-cols-3 2xl:grid-cols-4 mt-10 gap-x-8 gap-y-4">
         @foreach ($users as $user)
             <a href="{{ route('profile',$user->id)}}">
-                @include('livewire.pages.students.card', ['user' => $user])
+                @livewire('pages.students.card', ['user' => $user])
             </a>
         @endforeach
     </div>

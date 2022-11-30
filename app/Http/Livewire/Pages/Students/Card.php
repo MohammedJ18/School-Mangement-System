@@ -4,10 +4,11 @@ namespace App\Http\Livewire\Pages\Students;
 
 use Livewire\Component;
 
-class StudentCard extends Component
+class Card extends Component
 {
+    public $student;
     public function render()
     {
-        return view('livewire.pages.students.student-card');
+        return view('livewire.pages.students.card');
     }
 }
