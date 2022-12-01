@@ -28,6 +28,7 @@ class UserSeeder extends Seeder
             'email' => 'teacher@gmail.com',
             'password' => bcrypt('12121212'),
             'birth_date' => '1999-01-01',
+            'type'=>2,
         ]);
         // id 3
         User::create([
@@ -42,6 +43,7 @@ class UserSeeder extends Seeder
             'email' => 'parent@gmail.com',
             'password' => bcrypt('12121212'),
             'birth_date' => '1999-01-01',
+            'type'=>2,
         ]);
     }
 }
