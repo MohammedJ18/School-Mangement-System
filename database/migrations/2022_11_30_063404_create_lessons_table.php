@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->time('start_time');
             $table->time('end_time');
-            $table->integer('day'); // 1 = sunday, 2 = monday, 3 = tuesday, 4 = wednesday, 5 = thursday, 6 = friday, 7 = saturday
+            $table->integer('day'); // 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday, 7 = Sunday
             $table->foreignId('schedule_id')->constrained('schedules')->cascadeOnDelete();
             $table->foreignId('system_hall_id')->constrained('system_halls')->cascadeOnDelete();
             $table->foreignId('section_id')->constrained('sections')->cascadeOnDelete();

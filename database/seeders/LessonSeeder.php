@@ -74,7 +74,7 @@ class LessonSeeder extends Seeder
             [
                 'start_time' => '13:00:00',
                 'end_time' => '14:00:00',
-                'day' => 1,
+                'day' => 6,
                 'schedule_id' => 2,
                 'section_id' => 1,
                 'teacher_id' => 1,
