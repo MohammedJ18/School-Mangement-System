@@ -1,5 +1,5 @@
 <div>
-    <div>
+    {{-- <div>
         <span class="flex font-bold text-xl">
             <p>موسى الموسوي</p>
             <span class="mr-1">
@@ -22,5 +22,5 @@
                 </svg>
             </span>
         </span>
-    </div>
+    </div> --}}
 </div>
