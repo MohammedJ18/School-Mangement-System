@@ -1,7 +1,7 @@
 <div>
     <div x-data="{ modelOpen: false }">
         <button @click="modelOpen =!modelOpen"
-            class="border-2 border-secondary-200 w-80 h-28 items-center flex justify-center">
+            class="border-2 border-secondary-200 w-80 h-28 mt-4 items-center flex justify-center">
             <iconify-icon class="text-8xl text-secondary-600" icon="ic:sharp-plus"></iconify-icon>
         </button>
 

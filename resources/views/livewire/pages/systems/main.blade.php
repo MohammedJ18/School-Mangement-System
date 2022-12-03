@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="grid grid-cols-3 gap-y-8 mt-10">
-        @for ($i = 0; $i < 3; $i++)
+        @for ($i = 0; $i < 4; $i++)
         <a href="">
             @livewire('pages.systems.system')
         </a>
