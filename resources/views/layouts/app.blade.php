@@ -20,9 +20,9 @@
     @livewireStyles
 </head>
 
-<body class="font-Tajawal">
+<body class="">
     {{-- @include('layouts.navigation') --}}
-    <div dir="rtl" class="flex font-sans antialiased h-screen bg-white">
+    <div dir="rtl" class="flex font-Tajawal antialiased h-screen bg-white">
         <div>
             @include('livewire.components.sidebar.main')
         </div>
