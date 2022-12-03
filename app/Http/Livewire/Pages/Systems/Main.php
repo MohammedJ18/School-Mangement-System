@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class Main extends Component
 {
+    protected $listeners = ['$refresh'];
     public function render()
     {
         $this->systems = System::where('user_id', auth()->user()->id)->withCount('sections')->get();

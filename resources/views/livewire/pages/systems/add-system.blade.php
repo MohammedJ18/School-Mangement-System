@@ -33,12 +33,12 @@
                         </button>
                     </div>
 
-                    <div>
+                    <form wire:submit.prevent="addSystem">
                         <div class="mt-4">
                             <label class="block text-sm font-medium text-gray-700 text-right">اسم
                                 المدرسة</label>
                             <div class="mt-1">
-                                <input type="text" name="name" id="name"
+                                <input type="text" name="name" id="name" wire:model="name"
                                     class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                                     placeholder="المدرسة">
                             </div>
@@ -46,14 +46,14 @@
                         <div class="mt-4">
                             <label class="block text-sm font-medium text-gray-700 text-right">الموقع</label>
                             <div class="mt-1">
-                                <input type="text" name="name" id="name"
+                                <input type="text" name="name" id="name" wire:model="address"
                                     class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                                     placeholder="الموقع">
                             </div>
                         </div>
-                        <button type="button"
+                        <button type="submit"
                             class="text-white bg-primary-100 font-medium rounded-lg w-full text-sm px-5 py-2.5 mr-2 mb-2 mt-6">أضافة</button>
-                    </div>
+                    </form>
 
                 </div>
             </div>
