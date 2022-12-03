@@ -5,6 +5,7 @@ namespace App\Http\Livewire\Pages\Home;
 use App\Models\Guardian;
 use App\Models\Lesson;
 use App\Models\Student;
+use App\Models\SystemNotification;
 use App\Models\Teacher;
 use Livewire\Component;
 
@@ -34,6 +35,8 @@ class Main extends Component
         $currentTimeWithTimezone = now()->timezone('Asia/Riyadh')->format('H:i:s');
         $this->currentLessons = Lesson::where('day', date('N'))->where('start_time', '<=', $currentTimeWithTimezone)->where('end_time', '>=', $currentTimeWithTimezone)
         ->where('system_id', $this->ID)->get();
+        $this->systemNotifications = SystemNotification::where('system_id', $this->ID)->take(3)->get();
+        // dd($this->systemNotifications->toArray());
         //dd($this->lessons->toArray());
         return view('livewire.pages.home.main');
     }

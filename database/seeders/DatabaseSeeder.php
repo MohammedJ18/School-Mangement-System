@@ -30,6 +30,7 @@ class DatabaseSeeder extends Seeder
             SystemHallSeeder::class,
             ScheduleSeeder::class,
             LessonSeeder::class,
+            SystemNotificationSeeder::class,
         ]);
 
         Lesson::factory()->count(100)->create();

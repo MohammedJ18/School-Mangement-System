@@ -27,19 +27,19 @@
 
             <div>
                 <div class="mt-12 2xl:mt-16">
-                    <p class="font-bold text-lg 2xl:text-2xl">أحصائيات سريعة</p>
+                    <p class="font-bold text-lg 2xl:text-2xl">اخر التبليغات</p>
                 </div>
                 <div class="flex flex-col gap-y-3 mt-4">
-                    <div class="border-2 border-secondary-200 h-14 2xl:h-16"></div>
-                    <div class="border-2 border-secondary-200 h-14 2xl:h-16"></div>
-                    <div class="border-2 border-secondary-200 h-14 2xl:h-16"></div>
+                    @foreach($systemNotifications as $notification)
+                    <div class="border-2 border-secondary-200 h-14 2xl:h-16">{{ $notification->message }}</div>
+                    @endforeach
                 </div>
             </div>
         </div>
 
         {{-- left side  --}}
         <div class="mt-9 mr-12 w-full">
-            <p class="font-bold text-lg w-full 2xl:text-2xl 2xl:w-auto">ألمحاضرات القادمة</p>
+            <p class="font-bold text-lg w-full 2xl:text-2xl 2xl:w-auto">المحاضرات الحالية</p>
             <div class="border-2 mt-4 h-auto ">
                 <div class="mt-4 p-3">
                     @foreach ($currentLessons as $item)

@@ -27,5 +27,9 @@ class System extends Model
     {
         return $this->hasMany(SystemHall::class);
     }
+    public function systemNotifications()
+    {
+        return $this->hasMany(SystemNotification::class);
+    }
     ### End Relationships ###
 }
