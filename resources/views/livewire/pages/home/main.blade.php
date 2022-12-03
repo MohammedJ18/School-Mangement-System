@@ -10,10 +10,20 @@
                     هم فد شي
                 </button>
             </div>
+            <div>
+                <div class="mt-20">
+                    <div>
+                        <p class="font-bold text-lg 2xl:text-2xl">أحصائيات سريعة</p>
+                    </div>
+                    <div class="flex gap-x-5 mt-3 2xl:mt-4">
+                        @foreach($counts as $item)
+                        <livewire:pages.home.stats-card :item="$item" key="{{ now() }}"/>
+                        @endforeach
+                    </div>
+                </div>
 
-            <div class="mt-20">
-                <livewire:pages.home.stats-card />
             </div>
+
 
             <div>
                 <div class="mt-12 2xl:mt-16">
@@ -29,7 +39,7 @@
 
         {{-- left side  --}}
         <div class="mt-9 mr-12 w-full">
-            
+
             @livewire('pages.home.next-lessons')
         </div>
     </div>
