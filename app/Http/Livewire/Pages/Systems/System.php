@@ -6,6 +6,7 @@ use Livewire\Component;
 
 class System extends Component
 {
+    public $system;
     public function render()
     {
         return view('livewire.pages.systems.system');

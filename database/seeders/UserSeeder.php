@@ -21,6 +21,7 @@ class UserSeeder extends Seeder
             'email' => 'mohammed@gmail.com',
             'password' => bcrypt('12121212'),
             'birth_date' => '1999-01-01',
+            'image_path' => 'img/users/dev1.jpg',
         ]);
         // id 2
         User::create([

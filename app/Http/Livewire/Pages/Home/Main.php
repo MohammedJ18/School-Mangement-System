@@ -25,7 +25,7 @@ class Main extends Component
             ],
             [
                 'name' => 'اولياء الامور',
-                'count' =>Guardian ::count(),
+                'count' => Guardian::count(),
             ],
         ];
         $currentTimeWithTimezone = now()->timezone('Asia/Riyadh')->format('H:i:s');

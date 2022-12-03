@@ -25,6 +25,7 @@ return new class extends Migration
             $table->date('birth_date')->nullable();
             $table->string('address')->nullable();
             $table->integer('type')->default(1); // 1 : Student , 2 : Teacher , 3 : Parent , 4 : manager , 5 : admin
+            $table->string('image_path')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

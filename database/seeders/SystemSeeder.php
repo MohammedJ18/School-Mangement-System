@@ -20,6 +20,7 @@ class SystemSeeder extends Seeder
             [
                 'name' => 'اعدادية الهارثة للبنين',
                 'user_id' => 1,
+                'address' => 'الهارثة',
             ]
         );
         //id 2
@@ -27,6 +28,7 @@ class SystemSeeder extends Seeder
             [
                 'name' => 'اعدادية دجلة للبنات',
                 'user_id' => 1,
+                'address' => 'الكباسي',
             ]
         );
     }
