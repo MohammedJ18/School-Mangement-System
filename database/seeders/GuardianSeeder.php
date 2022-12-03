@@ -17,6 +17,7 @@ class GuardianSeeder extends Seeder
     {
         Guardian::create([
             'user_id' => 4,
+            'system_id' => 1,
         ]);
     }
 }

@@ -17,6 +17,7 @@ class TeacherSeeder extends Seeder
     {
         Teacher::create([
             'user_id' => 2,
+            'system_id' => 1,
         ]);
     }
 }

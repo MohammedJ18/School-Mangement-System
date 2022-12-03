@@ -12,6 +12,7 @@ class Student extends Model
         'group_id',
         'user_id',
         'section_id',
+        'system_id',
     ];
 
     ###  Relationships  ###

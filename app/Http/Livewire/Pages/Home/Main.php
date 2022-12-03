@@ -11,21 +11,24 @@ use Livewire\Component;
 class Main extends Component
 {
     public $counts = [];
-
+    public function mount($id)
+    {
+        $this->ID = $id;
+    }
     public function render()
     {
         $this->counts = [
             [
                 'name' => 'الطلاب',
-                'count' => Student::count(),
+                'count' => Student::where('system_id', $this->ID)->count(),
             ],
             [
                 'name' => 'الأساتذة',
-                'count' => Teacher::count(),
+                'count' => Teacher::where('system_id', $this->ID)->count(),
             ],
             [
                 'name' => 'اولياء الامور',
-                'count' => Guardian::count(),
+                'count' => Guardian::where('system_id', $this->ID)->count(),
             ],
         ];
         $currentTimeWithTimezone = now()->timezone('Asia/Riyadh')->format('H:i:s');

@@ -16,10 +16,10 @@ use App\Http\Livewire\Guest\Home\Main as GuestHome;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', GuestHome::class)->name('guest-home');
+Route::get('/', GuestHome::class)->name('guest');
 //group by middleware
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/home', Home::class)->name('home');
+    Route::get('/school/{id}', Home::class)->name('school');
     Route::get('/students', Students::class)->name('students');
     Route::get('/systems', Systems::class)->name('systems');
     Route::get('/profile/{id}', Profile::class)->name('profile');

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignId('group_id')->constrained();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('section_id')->constrained();
+            $table->foreignId('system_id')->constrained();
             $table->timestamps();
         });
     }

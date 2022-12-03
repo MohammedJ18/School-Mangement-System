@@ -16,7 +16,7 @@
     </div>
     <div class="grid grid-cols-3 gap-y-8 mt-10">
         @foreach ($systems as $system)
-        <a href="">
+        <a href="{{ route('school', $system->id) }}">
             <livewire:pages.systems.system :system="$system" key="{{ now() }}"/>
         </a>
         @endforeach

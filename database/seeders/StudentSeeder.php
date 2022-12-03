@@ -19,12 +19,14 @@ class StudentSeeder extends Seeder
             'group_id' => 1,
             'user_id' => 1,
             'section_id' => 1,
+            'system_id' => 1,
         ]);
 
         Student::create([
             'group_id' => 1,
             'user_id' => 3,
             'section_id' => 1,
+            'system_id' => 2,
         ]);
     }
 }
