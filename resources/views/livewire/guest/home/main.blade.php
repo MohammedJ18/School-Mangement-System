@@ -19,9 +19,9 @@
     </div>
 
     <div class="flex justify-center mt-16">
-        <button class="bg-primary-100 w-40 h-10 font-semibold">
-            تسجيل دخول
-        </button>
+        <a href="{{ route('login') }}" class="bg-primary-100 w-40 h-10 font-semibold text-center pt-2">
+           ابدأ الان
+        </a>
     </div>
     <div class="flex gap-x-8 mx-16 mt-14">
         <div class="text-center w-1/3">

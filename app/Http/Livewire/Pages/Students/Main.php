@@ -6,15 +6,15 @@ use Livewire\Component;
 
 class Main extends Component
 {
-    public $search;
+    public $name;
     public function render()
     { 
-       // sleep(1);
-        $this->users = User::where('type',1)->when($this->search,function($query,$search){
-            return $query->where('name','LIKE',"%$search%");
+        // students from users table where type is 1 and when $name is not null
+        $this->students = User::where('type', 1)->when($this->name, function($query){
+            $query->where('name', 'like', '%'.$this->name.'%');
         })->get();
-        //if($this->search)
-       // dd($this->users->toArray());
+        // if($this->name)
+        // dd($this->students->toArray());
         return view('livewire.pages.students.main');
     }
 }

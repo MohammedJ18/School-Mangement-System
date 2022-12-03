@@ -16,7 +16,9 @@ use App\Http\Livewire\Guest\Home\Main as GuestHome;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::middleware(['guest'])->group(function () {
 Route::get('/', GuestHome::class)->name('guest');
+});
 //group by middleware
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/school/{id}', Home::class)->name('school');

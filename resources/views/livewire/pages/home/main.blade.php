@@ -3,11 +3,11 @@
         <div>
             <div class="flex">
                 <button class="bg-primary-100 w-40 h-10">
-                    فد شي
+                    غيابات الطلاب
                 </button>
 
                 <button class="border-2 border-primary-100 w-40 h-10 mr-10">
-                    هم فد شي
+                    جدول اليوم
                 </button>
             </div>
             <div>
