@@ -26,6 +26,7 @@ class LessonSeeder extends Seeder
                 'subject_id' => 1,
                 'group_id' => 1,
                 'system_hall_id' => 1,
+                'system_id' => 1,
             ],
             [
                 'start_time' => '09:00:00',
@@ -37,6 +38,7 @@ class LessonSeeder extends Seeder
                 'subject_id' => 1,
                 'group_id' => 1,
                 'system_hall_id' => 1,
+                'system_id' => 1,
             ],
             [
                 'start_time' => '10:00:00',
@@ -48,6 +50,7 @@ class LessonSeeder extends Seeder
                 'subject_id' => 1,
                 'group_id' => 1,
                 'system_hall_id' => 1,
+                'system_id' => 1,
             ],
             [
                 'start_time' => '11:00:00',
@@ -59,6 +62,7 @@ class LessonSeeder extends Seeder
                 'subject_id' => 1,
                 'group_id' => 1,
                 'system_hall_id' => 1,
+                'system_id' => 2,
             ],
             [
                 'start_time' => '12:00:00',
@@ -70,6 +74,7 @@ class LessonSeeder extends Seeder
                 'subject_id' => 1,
                 'group_id' => 1,
                 'system_hall_id' => 1,
+                'system_id' => 2,
             ],
             [
                 'start_time' => '13:00:00',
@@ -81,6 +86,7 @@ class LessonSeeder extends Seeder
                 'subject_id' => 1,
                 'group_id' => 1,
                 'system_hall_id' => 1,
+                'system_id' => 2,
             ],
         ];
 

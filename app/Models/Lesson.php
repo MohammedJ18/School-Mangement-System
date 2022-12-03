@@ -18,6 +18,7 @@ class Lesson extends Model
         'start_time',
         'end_time',
         'day',
+        'system_id',
     ];
     ### RELATIONSHIPS ###
     public function schedule()

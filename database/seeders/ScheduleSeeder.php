@@ -23,5 +23,13 @@ class ScheduleSeeder extends Seeder
             'title' => 'جدول الكورس الثاني للمدرسة الابتدائية',
             'system_id' => 1,
         ]);
+        Schedule::create([
+            'title' => 'جدول الكورس الاول للمدرسة الابتدائية',
+            'system_id' => 2,
+        ]);
+        Schedule::create([
+            'title' => 'جدول الكورس الثاني للمدرسة الابتدائية',
+            'system_id' => 2,
+        ]);
     }
 }

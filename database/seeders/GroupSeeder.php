@@ -19,5 +19,25 @@ class GroupSeeder extends Seeder
             'name' => 'شعبة A',
             'section_id' => 1,
         ]);
+        Group::create([
+            'name' => 'شعبة B',
+            'section_id' => 1,
+        ]);
+        Group::create([
+            'name' => 'شعبة C',
+            'section_id' => 1,
+        ]);
+        Group::create([
+            'name' => 'شعبة A',
+            'section_id' => 2,
+        ]);
+        Group::create([
+            'name' => 'شعبة B',
+            'section_id' => 2,
+        ]);
+        Group::create([
+            'name' => 'شعبة C',
+            'section_id' => 2,
+        ]);
     }
 }

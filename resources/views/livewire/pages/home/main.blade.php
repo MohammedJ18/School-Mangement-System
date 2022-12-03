@@ -16,8 +16,8 @@
                         <p class="font-bold text-lg 2xl:text-2xl">أحصائيات سريعة</p>
                     </div>
                     <div class="flex gap-x-5 mt-3 2xl:mt-4">
-                        @foreach($counts as $item)
-                        <livewire:pages.home.stats-card :item="$item" key="{{ now() }}"/>
+                        @foreach ($counts as $item)
+                            <livewire:pages.home.stats-card :item="$item" key="{{ now() }}" />
                         @endforeach
                     </div>
                 </div>
@@ -39,8 +39,14 @@
 
         {{-- left side  --}}
         <div class="mt-9 mr-12 w-full">
-
-            @livewire('pages.home.next-lessons')
+            <p class="font-bold text-lg w-full 2xl:text-2xl 2xl:w-auto">ألمحاضرات القادمة</p>
+            <div class="border-2 mt-4 h-auto ">
+                <div class="mt-4 p-3">
+                    @foreach ($currentLessons as $item)
+                        <livewire:pages.home.next-lessons :item="$item" key="{{ now() }}" />
+                    @endforeach
+                </div>
+            </div>
         </div>
     </div>
 </div>

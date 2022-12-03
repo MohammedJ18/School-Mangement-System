@@ -34,6 +34,5 @@ class AddSystem extends Component
            ]);
         $this->reset();
         $this->emitUp('$refresh');
-
     }
 }

@@ -32,7 +32,8 @@ class Main extends Component
             ],
         ];
         $currentTimeWithTimezone = now()->timezone('Asia/Riyadh')->format('H:i:s');
-        $this->lessons = Lesson::where('day', date('N'))->where('start_time', '<=', $currentTimeWithTimezone)->where('end_time', '>=', $currentTimeWithTimezone)->get();
+        $this->currentLessons = Lesson::where('day', date('N'))->where('start_time', '<=', $currentTimeWithTimezone)->where('end_time', '>=', $currentTimeWithTimezone)
+        ->where('system_id', $this->ID)->get();
         //dd($this->lessons->toArray());
         return view('livewire.pages.home.main');
     }

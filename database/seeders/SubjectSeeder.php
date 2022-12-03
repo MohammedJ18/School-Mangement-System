@@ -19,5 +19,25 @@ class SubjectSeeder extends Seeder
             'name' => 'الرياضيات',
             'section_id' => 1,
         ]);
+        Subject::create([
+            'name' => 'اللغة العربية',
+            'section_id' => 1,
+        ]);
+        Subject::create([
+            'name' => 'اللغة الانجليزية',
+            'section_id' => 1,
+        ]);
+        Subject::create([
+            'name' => 'الرياضيات',
+            'section_id' => 2,
+        ]);
+        Subject::create([
+            'name' => 'اللغة العربية',
+            'section_id' => 2,
+        ]);
+        Subject::create([
+            'name' => 'اللغة الانجليزية',
+            'section_id' => 2,
+        ]);
     }
 }
