@@ -24,38 +24,35 @@
 <div class="w-full">
     <div class="flex">
         <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPYMmIQYsXtA80h2rAHHYIgq3OgDxJ2hPRA&usqp=CAU" alt="" class="w-24 h-24 items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPYMmIQYsXtA80h2rAHHYIgq3OgDxJ2hPRA&usqp=CAU"
+                alt="" class="w-24 h-24 items-center">
         </div>
-        <div class="mr-5 mt-6">
-            <div>
+        <div class="mr-5 mt-5">
+            <div class="flex">
                 <p class="text-xl font-semibold">موسى نمير عبد</p>
-                <iconify-icon icon="mdi:pencil"></iconify-icon>
-
-            </div>
-            <p class="text-base font-semibold">المدير</p>
-        </div>
-    </div>
-
-    <div class="grid grid-cols-12 w-full mt-10">
-        <div class="col-span-4">
-            @livewire('pages.systems.add-system')
-            <div>
-                <a href="#">
-                    @for ($i = 0; $i < 3; $i++)
-                        @livewire('pages.systems.system')
-                    @endfor
+                <a href="">
+                    <iconify-icon class="mt-2 mr-2" icon="mdi:pencil"></iconify-icon>
                 </a>
-
             </div>
-
-        </div>
-        <div class="col-span-1">
-
-        </div>
-        <div class="col-span-7 border-2 border-secondary-200 p-4">
-            @livewire('pages.systems.info')
+            <p class="text-base font-semibold text-secondary-500">المدير</p>
         </div>
     </div>
+    <div class="grid grid-cols-3 gap-y-8 mt-10">
+        @for ($i = 0; $i < 3; $i++)
+        <a href="">
+            @livewire('pages.systems.system')
+        </a>
+        @endfor
+        @livewire('pages.systems.add-system')
+
+    </div>
+
+
+    {{-- <div class="col-span-1">
+        </div> --}}
+    {{-- <div class="col-span-7 border-2 border-secondary-200 p-4">
+            @livewire('pages.systems.info')
+        </div> --}}
     <!-- component -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </div>
