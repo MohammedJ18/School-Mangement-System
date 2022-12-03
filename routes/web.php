@@ -5,6 +5,7 @@ use App\Http\Livewire\Pages\Home\Main as Home;
 use App\Http\Livewire\Pages\Students\Main as Students;
 use App\Http\Livewire\Pages\Profile\Main as Profile;
 use App\Http\Livewire\Pages\Systems\Main as Systems;
+use App\Http\Livewire\Guest\Home\Main as GuestHome;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,9 +16,10 @@ use App\Http\Livewire\Pages\Systems\Main as Systems;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', GuestHome::class)->name('guest-home');
 //group by middleware
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/', Home::class)->name('home');
+    Route::get('/home', Home::class)->name('home');
     Route::get('/students', Students::class)->name('students');
     Route::get('/systems', Systems::class)->name('systems');
     Route::get('/profile/{id}', Profile::class)->name('profile');
