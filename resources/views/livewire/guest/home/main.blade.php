@@ -1,16 +1,16 @@
 <div class="my-6 mx-10">
     <div class="flex justify-between ">
-        <button class="border-2 border-primary-100 w-40 h-10">
+        <p class="text-xl text-primary-100 font-semibold">مدرستي</p>
+        <button class="border-2 border-primary-100 w-40 h-10 hover:bg-primary-100">
             <span class="">
                 تواصل معنا
             </span>
         </button>
-        <p class="text-xl text-primary-100 font-semibold">مدرستي</p>
     </div>
 
     <div class="text-center mt-20">
         <p class="text-3xl font-semibold">
-            أدارة وتنظيم المؤسسات التعليمية
+            إدارة وتنظيم المؤسسات التعليمية
         </p>
         <div class="mt-5 font-semibold">
             <p>اصبح من السهل ادارة مؤسساتك التعليمية ومتابعة اخر المستجدات التي</p>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="flex justify-center mt-16">
-        <a href="{{ route('login') }}" class="bg-primary-100 w-40 h-10 font-semibold text-center pt-2">
+        <a href="{{ route('login') }}" class="bg-primary-100 w-40 h-10 font-semibold text-center pt-2 hover:bg-primary-100/90">
            ابدأ الان
         </a>
     </div>
@@ -44,7 +44,7 @@
             </div>
             <p>
                 يسهل للمعلمين التواصل مع الطلبة وانشاء صفوفهم التعليمية ونشر المحتوى التعليمي والدرجات كما يسهل لأولياء
-                الامور مراقبة مستوى ابنائهم في التعليم والمشاكل التي يواجهوها ضمنهذهالمؤسسة</p>
+                الامور مراقبة مستوى ابنائهم في التعليم والمشاكل التي يواجهوها ضمن هذه المؤسسة</p>
         </div>
         <div class="text-center w-1/3">
             <div class="flex justify-center mb-6">
