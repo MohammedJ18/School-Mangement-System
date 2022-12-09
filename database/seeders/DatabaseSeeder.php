@@ -33,6 +33,6 @@ class DatabaseSeeder extends Seeder
             SystemNotificationSeeder::class,
         ]);
 
-        Lesson::factory()->count(100)->create();
+        Lesson::factory()->count(200)->create();
     }
 }
