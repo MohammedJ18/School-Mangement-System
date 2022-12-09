@@ -43,6 +43,18 @@
                                     placeholder="المدرسة">
                             </div>
                         </div>
+                        <div class="mt-4 text-right">
+                            <label class="text-sm font-medium text-gray-700 text-right">نوع النظام</label>
+                            <select
+                                class="border border-gray-300 text-gray-900 text-sm rounded-lg w-full">
+                                <option selected value="1">ابتدائية</option>
+                                <option value="2">متوسطة</option>
+                                <option value="3">اعدادية</option>
+                                <option value="4">روضة</option>
+                                <option value="5">معهد</option>
+                                <option value="6">كلية</option>
+                            </select>
+                        </div>
                         <div class="mt-4">
                             <label class="block text-sm font-medium text-gray-700 text-right">الموقع</label>
                             <div class="mt-1">
