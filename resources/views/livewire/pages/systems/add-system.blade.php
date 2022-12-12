@@ -1,7 +1,7 @@
 <div>
     <div x-data="{ modelOpen: false }">
         <button @click="modelOpen =!modelOpen"
-            class="border-2 border-secondary-200 w-80 h-28 mt-4 items-center flex justify-center hover:scale-110 duration-300">
+            class="border-2 border-secondary-200 w-72 lg:w-72 xl:w-80 h-28 mt-4 items-center flex justify-center mr-5 hover:scale-110 duration-300">
             <iconify-icon class="text-8xl text-secondary-600" icon="ic:sharp-plus"></iconify-icon>
         </button>
 
@@ -42,6 +42,18 @@
                                     class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                                     placeholder="المدرسة">
                             </div>
+                        </div>
+                        <div class="mt-4 text-right">
+                            <label class="text-sm font-medium text-gray-700 text-right">نوع النظام</label>
+                            <select
+                                class="border border-gray-300 text-gray-900 text-sm rounded-lg w-full">
+                                <option selected value="1">ابتدائية</option>
+                                <option value="2">متوسطة</option>
+                                <option value="3">اعدادية</option>
+                                <option value="4">روضة</option>
+                                <option value="5">معهد</option>
+                                <option value="6">كلية</option>
+                            </select>
                         </div>
                         <div class="mt-4">
                             <label class="block text-sm font-medium text-gray-700 text-right">الموقع</label>
