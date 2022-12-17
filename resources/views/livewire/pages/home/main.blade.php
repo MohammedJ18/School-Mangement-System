@@ -2,13 +2,13 @@
     <div class="flex">
         <div>
             <div class="flex">
-                <button class="bg-primary-100 w-40 h-10">
+                <a href="{{ route('schedule') }}" class="bg-primary-100 w-40 h-10">
                     غيابات الطلاب
-                </button>
+                </a>
 
-                <button class="border-2 border-primary-100 w-40 h-10 mr-10">
-                    جدول اليوم
-                </button>
+                <a href="{{ route('absences') }}" class="border-2 border-primary-100 w-40 h-10 mr-10">
+                    الجدول الاسبوعي
+                </a>
             </div>
             <div>
                 <div class="mt-20">
