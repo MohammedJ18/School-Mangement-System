@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class System extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'user_id', 'description', 'address'];
+    protected $fillable = ['name', 'user_id', 'description', 'address', 'type'];
 
     ###  Relationships  ###
     public function user()

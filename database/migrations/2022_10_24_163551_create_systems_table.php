@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('description')->nullable();
             $table->string('address');
+            $table->integer('type'); // 1: Elementary school, 2: Middle school, 3 Preparatory school, 4: secondary school, 5: educational institute, 6: college
             $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });

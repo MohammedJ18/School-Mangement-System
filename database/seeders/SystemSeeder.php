@@ -18,17 +18,28 @@ class SystemSeeder extends Seeder
         //id 1
         System::create(
             [
-                'name' => 'اعدادية الهارثة للبنين',
+                'name' => 'شط العرب',
                 'user_id' => 1,
                 'address' => 'الهارثة',
+                'type' => 1
             ]
         );
         //id 2
         System::create(
             [
-                'name' => 'اعدادية دجلة للبنات',
+                'name' => 'شط العرب',
                 'user_id' => 1,
                 'address' => 'الكباسي',
+                'type' => 2
+            ]
+        );
+        //id 3
+        System::create(
+            [
+                'name' => 'شط العرب',
+                'user_id' => 1,
+                'address' => 'العشار',
+                'type' => 3
             ]
         );
     }

@@ -45,13 +45,13 @@
                         </div>
                         <div class="mt-4 text-right">
                             <label class="text-sm font-medium text-gray-700 text-right">نوع النظام</label>
-                            <select
+                            <select wire:model="type"
                                 class="border border-gray-300 text-gray-900 text-sm rounded-lg w-full">
-                                <option selected value="1">ابتدائية</option>
-                                <option value="2">متوسطة</option>
-                                <option value="3">اعدادية</option>
-                                <option value="4">روضة</option>
-                                <option value="5">معهد</option>
+                                <option selected value="1">مدرسة ابتدائية</option>
+                                <option value="2">مدرسة متوسطة</option>
+                                <option value="3">مدرسة اعدادية</option>
+                                <option value="4">مدرسة ثانوية</option>
+                                <option value="5">معهد تعليمي</option>
                                 <option value="6">كلية</option>
                             </select>
                         </div>

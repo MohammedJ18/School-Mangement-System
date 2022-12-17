@@ -12,6 +12,7 @@ class AddSystem extends Component
     protected $listeners = ['$refresh'];
     public $name;
     public $address;
+    public $type;
     public function render()
     {
         return view('livewire.pages.systems.add-system');
@@ -20,11 +21,13 @@ class AddSystem extends Component
         $this->validate([
             'name' => 'required | min:3 | max:255 | string',
             'address' => 'required | min:3 | max:255 | string',
+            'type' => 'required | integer',
         ]);
         System::create([
             'name' => $this->name,
             'address' => $this->address,
             'user_id' => auth()->user()->id,
+            'type' => $this->type,
         ]);
         $this->alert('success', 'تم اضافة مؤسسة تعليمية جديدة', [
             'position' => 'center',
