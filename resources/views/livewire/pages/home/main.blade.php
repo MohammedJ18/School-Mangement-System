@@ -2,11 +2,11 @@
     <div class="flex">
         <div>
             <div class="flex">
-                <a href="{{ route('schedule') }}" class="bg-primary-100 w-40 h-10">
-                    غيابات الطلاب
+                <a href="{{ route('schedule') }}" class="bg-primary-100 py-2 px-7 text-center">
+                        غيابات الطلاب
                 </a>
 
-                <a href="{{ route('absences') }}" class="border-2 border-primary-100 w-40 h-10 mr-10">
+                <a href="{{ route('absences') }}" class="border-2 border-primary-100 py-2 px-5 text-center mr-10">
                     الجدول الاسبوعي
                 </a>
             </div>
