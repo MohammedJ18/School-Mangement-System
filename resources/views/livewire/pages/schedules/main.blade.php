@@ -34,60 +34,60 @@
             <div class="bg-secondary-200 w-40 h-14 py-4 px-7 text-center">
                 <span class="text-lg font-semibold">الأحد</span>
             </div>
-            @for ($i = 0; $i < 5; $i++)
-                <div class="grid grid-rows-6 border-2 bg-white w-40 h-14 text-center mt-4">
-                    <div class="row-span-4 text-lg font-semibold mt-3">العلوم</div>
-                    <div class="row-span-2 text-xs text-left ml-2">8-9AM</div>
-                </div>
-            @endfor
+            @foreach ($sundayLessons as $lesson)
+            <div class="grid grid-rows-6 border-2 bg-white w-40 h-14 text-center mt-4">
+                <div class="row-span-4 text-lg font-semibold mt-3">{{ $lesson->subject->name }}</div>
+                <div class="row-span-2 text-xs text-left ml-2"> {{date("g:i", strtotime($lesson->start_time))}} - {{date("g:i", strtotime($lesson->end_time))}}</div>
+            </div>
+            @endforeach
         </div>
 
         <div>
             <div class="bg-secondary-200 w-40 h-14 py-4 px-7 text-center">
                 <span class="text-lg font-semibold">الأثنين</span>
             </div>
-            @for ($i = 0; $i < 5; $i++)
-                <div class="grid grid-rows-6 border-2 bg-white w-40 h-14 text-center mt-4">
-                    <div class="row-span-4 text-lg font-semibold mt-3">العلوم</div>
-                    <div class="row-span-2 text-xs text-left ml-2">8-9AM</div>
-                </div>
-            @endfor
+            @foreach ($mondayLessons as $lesson)
+            <div class="grid grid-rows-6 border-2 bg-white w-40 h-14 text-center mt-4">
+                <div class="row-span-4 text-lg font-semibold mt-3">{{ $lesson->subject->name }}</div>
+                <div class="row-span-2 text-xs text-left ml-2"> {{date("g:i", strtotime($lesson->start_time))}} - {{date("g:i", strtotime($lesson->end_time))}}</div>
+            </div>
+            @endforeach
         </div>
 
         <div>
             <div class="bg-secondary-200 w-40 h-14 py-4 px-7 text-center">
                 <span class="text-lg font-semibold">الثلاثاء</span>
             </div>
-            @for ($i = 0; $i < 5; $i++)
-                <div class="grid grid-rows-6 border-2 bg-white w-40 h-14 text-center mt-4">
-                    <div class="row-span-4 text-lg font-semibold mt-3">العلوم</div>
-                    <div class="row-span-2 text-xs text-left ml-2">8-9AM</div>
-                </div>
-            @endfor
+            @foreach ($tuesdayLessons as $lesson)
+            <div class="grid grid-rows-6 border-2 bg-white w-40 h-14 text-center mt-4">
+                <div class="row-span-4 text-lg font-semibold mt-3">{{ $lesson->subject->name }}</div>
+                <div class="row-span-2 text-xs text-left ml-2"> {{date("g:i", strtotime($lesson->start_time))}} - {{date("g:i", strtotime($lesson->end_time))}}</div>
+            </div>
+            @endforeach
         </div>
 
         <div>
             <div class="bg-secondary-200 w-40 h-14 py-4 px-7 text-center">
                 <span class="text-lg font-semibold">الأربعاء</span>
             </div>
-            @for ($i = 0; $i < 5; $i++)
-                <div class="grid grid-rows-6 border-2 bg-white w-40 h-14 text-center mt-4">
-                    <div class="row-span-4 text-lg font-semibold mt-3">العلوم</div>
-                    <div class="row-span-2 text-xs text-left ml-2">8-9AM</div>
-                </div>
-            @endfor
+            @foreach ($wednesdayLessons as $lesson)
+            <div class="grid grid-rows-6 border-2 bg-white w-40 h-14 text-center mt-4">
+                <div class="row-span-4 text-lg font-semibold mt-3">{{ $lesson->subject->name }}</div>
+                <div class="row-span-2 text-xs text-left ml-2"> {{date("g:i", strtotime($lesson->start_time))}} - {{date("g:i", strtotime($lesson->end_time))}}</div>
+            </div>
+            @endforeach
         </div>
 
         <div>
             <div class="bg-secondary-200 w-40 h-14 py-4 px-7 text-center">
                 <span class="text-lg font-semibold">الخميس</span>
             </div>
-            @for ($i = 0; $i < 5; $i++)
-                <div class="grid grid-rows-6 border-2 bg-white w-40 h-14 text-center mt-4">
-                    <div class="row-span-4 text-lg font-semibold mt-3">العلوم</div>
-                    <div class="row-span-2 text-xs text-left ml-2">8-9AM</div>
-                </div>
-            @endfor
+            @foreach ($thursdayLessons as $lesson)
+            <div class="grid grid-rows-6 border-2 bg-white w-40 h-14 text-center mt-4">
+                <div class="row-span-4 text-lg font-semibold mt-3">{{ $lesson->subject->name }}</div>
+                <div class="row-span-2 text-xs text-left ml-2"> {{date("g:i", strtotime($lesson->start_time))}} - {{date("g:i", strtotime($lesson->end_time))}}</div>
+            </div>
+            @endforeach
         </div>
     </div>
 </div>

@@ -18,11 +18,9 @@
                     <th scope="col" class="py-1 px-3 border-x border-b-secondary-200">
                         درجة الشهر الثاني
                     </th>
+
                     <th scope="col" class="py-1 px-3 border-x border-b-secondary-200">
-                        درجة الشهر الثالث
-                    </th>
-                    <th scope="col" class="py-1 px-3 border-x border-b-secondary-200">
-                        السعي
+                        درجة نهاية الفصل
                     </th>
                     <th scope="col" class="py-1 px-3 border-x border-b-secondary-200">
                         التقدير
@@ -34,22 +32,57 @@
                     <tr class="">
                         <th scope="row"
                             class="py-1 px-3 border border-b-secondary-200 font-semibold whitespace-nowrap">
-                            العلوم
+                            @if ($i == 0)
+                                اللغة العربية
+                            @elseif($i == 1)
+                                اللغة الانجليزية
+                            @elseif($i == 2)
+                                الرياضيات
+                            @elseif($i == 3)
+                                العلوم
+                            @elseif($i == 4)    
+                                الفيزياء
+                            @elseif($i == 5)    
+                                الكيمياء
+                            @elseif($i == 6)
+                                الاحياء
+                            @elseif($i == 7)    
+                                الاجتماعيات
+                            @endif
                         </th>
                         <td class="py-1 px-3 border border-secondary-200 font-semibold whitespace-nowrap text-center">
-                            100
+                            @php $rand = rand(0, 25);
+                            $sum = 0;
+                            $sum += $rand;
+                            @endphp
+                            {{ $rand }}
                         </td>
                         <td class="py-1 px-3 border border-secondary-200 font-semibold whitespace-nowrap text-center">
-                            100
+                            @php $rand = rand(0, 25); 
+                            $sum += $rand;
+                            @endphp
+                            {{ $rand }}
+                        </td>
+
+                        <td class="py-1 px-3 border border-secondary-200 font-semibold whitespace-nowrap text-center">
+                            @php $rand = rand(0, 50);
+                            $sum += $rand;@endphp
+                            {{ $rand }}
                         </td>
                         <td class="py-1 px-3 border border-secondary-200 font-semibold whitespace-nowrap text-center">
-                            99
-                        </td>
-                        <td class="py-1 px-3 border border-secondary-200 font-semibold whitespace-nowrap text-center">
-                            99
-                        </td>
-                        <td class="py-1 px-3 border border-secondary-200 font-semibold whitespace-nowrap text-center">
-                            جيد
+                            @if ($sum >= 90)
+                                ممتاز
+                            @elseif($sum >= 80)
+                                جيد جدا
+                            @elseif($sum >= 70)
+                                جيد
+                            @elseif($sum >= 60)
+                                مقبول
+                            @elseif($sum >= 50)
+                                ضعيف
+                            @else
+                                راسب
+                            @endif
                         </td>
                     </tr>
                 @endfor

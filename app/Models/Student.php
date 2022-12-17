@@ -40,5 +40,9 @@ class Student extends Model
     {
         return $this->hasMany(StudentAbsence::class);
     }
+    public function notifications()
+    {
+        return $this->hasMany(StudentNotification::class);
+    }
     ###  End Relationships  ###
 }

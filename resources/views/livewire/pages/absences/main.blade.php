@@ -25,11 +25,10 @@
         </div>
     </div>
 
+    {{-- the card --}}
     <div class="grid grid-cols-3 gap-x-8 gap-y-6 mt-10">
-        {{-- the card --}}
-        @for ($i = 0; $i < 18; $i++)
-            <livewire:pages.absences.card />
-        @endfor
-
+        @foreach ($students as $student)
+            <livewire:pages.absences.card :student="$student" key="{{ now() }}" />
+        @endforeach
     </div>
 </div>

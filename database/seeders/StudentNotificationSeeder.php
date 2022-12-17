@@ -2,11 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\StudentAbsence;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class StudentAbsenceSeeder extends Seeder
+class StudentNotificationSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,5 +14,6 @@ class StudentAbsenceSeeder extends Seeder
      */
     public function run()
     {
+        //
     }
 }

@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Lesson;
+use App\Models\StudentAbsence;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -33,6 +34,8 @@ class DatabaseSeeder extends Seeder
             SystemNotificationSeeder::class,
         ]);
 
-        Lesson::factory()->count(200)->create();
+        Lesson::factory()->count(400)->create();
+        StudentAbsence::factory()->count(10)->create();
+
     }
 }
