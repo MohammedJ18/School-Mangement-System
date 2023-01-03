@@ -17,7 +17,8 @@ class AddSystem extends Component
     {
         return view('livewire.pages.systems.add-system');
     }
-    public function addSystem(){
+    public function addSystem()
+    {
         $this->validate([
             'name' => 'required | min:3 | max:255 | string',
             'address' => 'required | min:3 | max:255 | string',
@@ -34,7 +35,7 @@ class AddSystem extends Component
             'timer' => 3000,
             'toast' => true,
             'text' => '',
-           ]);
+        ]);
         $this->reset();
         $this->emitUp('$refresh');
     }
