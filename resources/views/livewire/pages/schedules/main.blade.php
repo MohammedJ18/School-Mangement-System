@@ -27,7 +27,7 @@
                 تعديل
             </button> --}}
             @livewire('pages.schedules.add-schedule')
-            @livewire('pages.schedules.edit-schedule')
+            {{-- @livewire('pages.schedules.edit-schedule') --}}
 
         </div>
     </div>
