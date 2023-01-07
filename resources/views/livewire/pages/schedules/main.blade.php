@@ -22,10 +22,13 @@
         <div>
 
         </div>
-        <div>
-            <button class="bg-primary-100 text-secondary-700 w-40 h-10">
-                تعديل الجداول
-            </button>
+        <div class="flex ml-12 gap-x-5">
+            {{-- <button class="bg-primary-100 text-secondary-700 w-40 h-10">
+                تعديل
+            </button> --}}
+            @livewire('pages.schedules.add-schedule')
+            @livewire('pages.schedules.edit-schedule')
+
         </div>
     </div>
 
