@@ -21,5 +21,10 @@ class Teacher extends Model
     {
         return $this->hasMany(Lesson::class);
     }
+    //teacher absences
+    public function absences()
+    {
+        return $this->hasMany(Absence::class);
+    }
     ### End Relationships ###
 }

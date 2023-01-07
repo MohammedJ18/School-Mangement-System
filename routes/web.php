@@ -8,7 +8,10 @@ use App\Http\Livewire\Pages\Systems\Main as Systems;
 use App\Http\Livewire\Guest\Home\Main as GuestHome;
 use App\Http\Livewire\Pages\Schedules\Main as Schedule;
 use App\Http\Livewire\Pages\Absences\Main as Absences;
-
+use App\Http\Livewire\Pages\Sections\Main as Sections;
+use App\Http\Livewire\Pages\Sections\Section as Section;
+use App\Http\Livewire\Pages\Sections\Group as Group;
+use App\Http\Livewire\Pages\Teachers\Main as Teachers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +33,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/profile/{id}', Profile::class)->name('profile');
     Route::get('/schedule', Schedule::class)->name('schedule');
     Route::get('/absences', Absences::class)->name('absences');
+    Route::get('/sections', Sections::class)->name('sections');
+    Route::get('/section/{id}', Section::class)->name('section');
+    Route::get('/group/{id}', Group::class)->name('group');
+    Route::get('/teachers', Teachers::class)->name('teachers');
 });
 
 require __DIR__ . '/auth.php';
