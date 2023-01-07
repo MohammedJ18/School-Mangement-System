@@ -24,6 +24,22 @@ class SectionSeeder extends Seeder
             'name' => 'الصف الثاني الابتدائي',
         ]);
         Section::create([
+            'system_id' => 1,
+            'name' => 'الصف الثالث الابتدائي',
+        ]);
+        Section::create([
+            'system_id' => 1,
+            'name' => 'الصف الرابع الابتدائي',
+        ]);
+        Section::create([
+            'system_id' => 1,
+            'name' => 'الصف الخامس الابتدائي',
+        ]);
+        Section::create([
+            'system_id' => 1,
+            'name' => 'الصف السادس الابتدائي',
+        ]);
+        Section::create([
             'system_id' => 2,
             'name' => 'الصف الاول الابتدائي',
         ]);

@@ -4,19 +4,19 @@
     </h1>
     <div class="flex justify-between mt-6">
         <div>
-            <select class="border text-secondary-700 border-primary-100 w-36 text-sm h-10">
-                <option selected value="1">الصف الأول</option>
-                <option value="2">الصف الثاني</option>
-                <option value="3">الصف الثالث</option>
-                <option value="4">الصف الرابع</option>
-                <option value="5">الصف الخامس</option>
-                <option value="6">الصف السادس</option>
+            <select class="border text-secondary-700 border-primary-100 w-36 text-sm h-10"
+            wire:model='section_id'>
+                <option >اختر صف</option>
+                @foreach ($sections as $section)
+                <option value="{{ $section->id }}">{{ $section->name }}</option>
+                @endforeach
             </select>
-            <select class="border text-secondary-700 border-primary-100 w-36 h-10 mr-10 text-sm">
-                <option selected value="1">أ</option>
-                <option value="2">ب</option>
-                <option value="3">ج</option>
-                <option value="4">د</option>
+            <select class="border text-secondary-700 border-primary-100 w-36 h-10 mr-10 text-sm"
+            wire:model='group_id'>
+                <option >اختر شعبة</option>
+                @foreach ($groups as $group)
+                <option value="{{ $group->id }}">{{ $group->name }}</option>
+                @endforeach
             </select>
         </div>
         <div>

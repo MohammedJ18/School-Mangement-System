@@ -32,39 +32,41 @@
                         </button>
                     </div>
 
-                    <form wire:submit.prevent="addSystem">
+                    <form wire:submit.prevent="addLesson">
                         <div class="mt-4">
                             <label class="block text-sm font-medium text-gray-700 text-right">
                                 الصف
                             </label>
-                            <select
+                            <select wire:model='section_id'
                                 class="block w-full py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm">
-                                <option selected value="1">الأحد</option>
-                                <option value="2">الأثنين</option>
-                                <option value="3">الثلاثاء</option>
-                                <option value="4">الأربعاء</option>
-                                <option value="4">الخميس</option>
+                                <option >اختر الصف</option>
+                                @foreach ($sections as $section)
+                                    <option value="{{ $section->id }}">{{ $section->name }}</option>
+                                @endforeach
                             </select>
                         </div>
 
                         <div class="flex justify-between">
                             <div class="mt-4 text-right flex flex-col">
                                 <label class="text-sm font-medium text-gray-700 text-right">الشعبة</label>
-                                <select class="border text-secondary-700 border-gray-300 w-52 h-10 mt-2 text-sm">
-                                    <option selected value="1">أ</option>
-                                    <option value="2">ب</option>
-                                    <option value="3">ج</option>
-                                    <option value="4">د</option>
+                                <select class="border text-secondary-700 border-gray-300 w-52 h-10 mt-2 text-sm"
+                                    wire:model='group_id'>
+                                    <option >اختر الشعبة</option>
+                                    @foreach ($groups as $group)
+                                        <option value="{{ $group->id }}">{{ $group->name }}</option>
+                                    @endforeach
                                 </select>
                             </div>
 
                             <div class="mt-4 text-right flex flex-col">
                                 <label class="text-sm font-medium text-gray-700 text-right">اليوم</label>
-                                <select class="border text-secondary-700 border-gray-300 w-52 h-10 mt-2 text-sm">
-                                    <option selected value="1">الأحد</option>
-                                    <option value="2">الأثنين</option>
-                                    <option value="3">الثلاثاء</option>
-                                    <option value="4">الأربعاء</option>
+                                <select class="border text-secondary-700 border-gray-300 w-52 h-10 mt-2 text-sm"
+                                    wire:model='day'>
+                                    <option >اختر اليوم</option>
+                                    <option value="7">الأحد</option>
+                                    <option value="1">الأثنين</option>
+                                    <option value="2">الثلاثاء</option>
+                                    <option value="3">الأربعاء</option>
                                     <option value="4">الخميس</option>
                                 </select>
                             </div>
@@ -76,34 +78,61 @@
                                     البدء</label>
 
                                 <input class="border text-secondary-700 border-gray-300 w-52 h-10 mt-2 text-sm"
-                                    type="time" id="appt" name="appt"" required>
+                                    type="time" wire:model='start_time' required>
                             </div>
 
                             <div class="flex flex-col">
                                 <label class="text-sm font-medium text-gray-700 text-right" for="appt">وقت
-                                    البدء</label>
+                                    النهاية</label>
 
                                 <input class="border text-secondary-700 border-gray-300 w-52 h-10 mt-2 text-sm"
-                                    type="time" id="appt" name="appt"" required>
+                                    type="time" wire:model='end_time' required>
                             </div>
                         </div>
 
                         <div class="mt-4">
                             <label class="block text-sm font-medium text-gray-700 text-right">التدريسي</label>
                             <div class="mt-1">
-                                <input type="text" name="name" id="name"
-                                    class="block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
-                                    placeholder="التدريسي">
+                                <select
+                                    class="block w-full py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
+                                    wire:model='teacher_id'>
+                                    <option >اختر التدريسي</option>
+                                    @foreach ($teachers as $teacher)
+                                        <option value="{{ $teacher->id }}">{{ $teacher->user->name }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
-                        <div class="flex justify-between w-full ml-2">
-                            <div class="w-full ml-2">
+                        <div class="mt-4">
+                            <label class="block text-sm font-medium text-gray-700 text-right">المادة</label>
+                            <div class="mt-1">
+                                <select
+                                    class="block w-full py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
+                                    wire:model='subject_id'>
+                                    <option >اختر المادة</option>
+                                    @foreach ($subjects as $subject)
+                                        <option value="{{ $subject->id }}">{{ $subject->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <label class="block text-sm font-medium text-gray-700 text-right">القاعة</label>
+                            <div class="mt-1">
+                                <select
+                                    class="block w-full py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
+                                    wire:model='hall_id'>
+                                    <option >اختر القاعة</option>
+                                    @foreach ($system_halls as $hall)
+                                        <option value="{{ $hall->id }}">{{ $hall->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full ">
+                            <div class="w-full ">
                                 <button type="submit"
                                     class="text-white bg-primary-100 font-medium w-full text-sm px-5 py-2.5 mb-2 mt-6">أضافة</button>
-                            </div>
-                            <div class="w-full mr-2">
-                                <button type="submit"
-                                    class="text-white bg-primary-100 font-medium w-full text-sm px-5 py-2.5 mb-2 mt-6">الغاء</button>
                             </div>
                         </div>
                     </form>
