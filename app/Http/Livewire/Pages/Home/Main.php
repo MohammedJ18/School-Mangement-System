@@ -12,6 +12,9 @@ use Livewire\Component;
 class Main extends Component
 {
     public $counts = [];
+    public $ID;
+    public $currentLessons = [];
+    public $systemNotifications = [];
     public function mount($id)
     {
         $this->ID = $id;

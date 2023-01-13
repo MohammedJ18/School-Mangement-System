@@ -4,8 +4,9 @@
         <div class="flex flex-col md:flex-row w-full gap-y-4 md-gap-y-0">
             <input class="border-2 border-primary-100 w-2/3 md:w-1/5" type="text" wire:model="name"
                 placeholder="اسم الطالب">
-            <input class="border-2 border-primary-100 w-2/3 md:w-1/5 md:mr-16" type="text" placeholder="الصف">
+                
         </div>
+        @livewire('pages.sections.add-student')
     </div>
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 mt-10 gap-x-8 gap-y-4">
         @foreach ($students as $student)
