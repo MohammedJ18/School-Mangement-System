@@ -1,20 +1,40 @@
 <?php
 
 namespace App\Http\Livewire\Pages\Students;
+
+use App\Models\Group;
+use App\Models\Section;
+use App\Models\Student;
 use App\Models\User;
 use Livewire\Component;
 
 class Main extends Component
 {
+    protected $listeners = [ '$refresh'];
+    #
     public $name;
+    public $students;
+    public $sections;
+    public $section_id;
+    public $groups;
+    public $group_id;
+
     public function render()
-    { 
-        // students from users table where type is 1 and when $name is not null
-        $this->students = User::where('type', 1)->when($this->name, function($query){
-            $query->where('name', 'like', '%'.$this->name.'%');
+    {
+        // student with user when name of user is like $this->name
+        $this->students = Student::with('user')->whereHas('user', function ($query) {
+            $query->where('name', 'like', '%' . $this->name . '%');
+        })->when($this->section_id, function ($query) {
+            $query->where('section_id', $this->section_id);
+        })->when($this->group_id, function ($query) {
+            $query->where('group_id', $this->group_id);
         })->get();
-        // if($this->name)
-        // dd($this->students->toArray());
+        
+        // sections of system 1
+        $this->sections = Section::where('system_id', 1)->get();
+        // groups of section_id
+        $this->groups = Group::where('section_id', $this->section_id)->get();
+
         return view('livewire.pages.students.main');
     }
 }

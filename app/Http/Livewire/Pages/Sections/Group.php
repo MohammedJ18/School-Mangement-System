@@ -8,6 +8,8 @@ use Livewire\Component;
 
 class Group extends Component
 {
+    protected $listeners = ['$refresh'];
+    
     public $students;
     public function mount($id)
     {

@@ -20,7 +20,7 @@ class StudentFactory extends Factory
             'group_id' => fake()->numberBetween(1, 2),
             //user id between 5 and 305 unique
             'user_id' => fake()->numberBetween(5, 300),
-            'section_id' => fake()->numberBetween(1, 2),
+            'section_id' => fake()->numberBetween(1, 6),
             'system_id' => 1,
         ];
     }
