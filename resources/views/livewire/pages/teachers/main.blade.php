@@ -5,6 +5,7 @@
             <input class="border-2 border-primary-100 w-2/3 md:w-1/2" type="text" wire:model="name"
                 placeholder="اسم التدريسي">
         </div>
+        @livewire('pages.teachers.add-teacher')
     </div>
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 mt-10 gap-x-8 gap-y-4">
         @foreach ($teachers as $teacher)

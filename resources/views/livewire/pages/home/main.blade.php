@@ -18,6 +18,7 @@
                     <div class="flex gap-x-5 mt-3 2xl:mt-4">
                         @foreach ($counts as $item)
                             <livewire:pages.home.stats-card :item="$item" key="{{ now() }}" />
+                            
                         @endforeach
                     </div>
                 </div>

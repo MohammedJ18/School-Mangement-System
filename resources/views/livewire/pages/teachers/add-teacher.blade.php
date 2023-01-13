@@ -1,10 +1,10 @@
 <div>
     <div x-data="{ modelOpen: false }">
         <button @click="modelOpen =!modelOpen" class="bg-primary-100 text-secondary-700 w-40 h-10">
-            اضافة طالب
+            اضافة تدريسي
         </button>
 
-        <div x-show="modelOpen"  class="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+        <div x-show="modelOpen" class="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
             aria-modal="true">
             <div class="flex items-end justify-center min-h-screen px-4 text-center md:items-center sm:block sm:p-0">
                 <div x-cloak @click="modelOpen = false" x-show="modelOpen"
@@ -21,7 +21,7 @@
                     x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                     class="inline-block w-full max-w-xl p-8 my-20 overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl 2xl:max-w-2xl">
                     <div class="flex items-center justify-between space-x-4">
-                        <h1 class="text-xl font-medium text-gray-800 ">اضافة طالب</h1>
+                        <h1 class="text-xl font-medium text-gray-800 ">اضافة تدريسي</h1>
 
                         <button @click="modelOpen = false" class="text-gray-600 focus:outline-none hover:text-gray-700">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
@@ -32,14 +32,14 @@
                         </button>
                     </div>
 
-                    <form wire:submit.prevent="addStudent">
+                    <form wire:submit.prevent="addTeacher">
                         <div class="mt-4">
                             <label class="block text-sm font-medium text-gray-700 text-right">اسم
-                                الطالب</label>
+                                التدريسي</label>
                             <div class="mt-1">
                                 <input type="text" name="name" id="name" wire:model="name"
                                     class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
-                                    placeholder="الطالب" required>
+                                    placeholder="التدريسي" required>
                             </div>
                         </div>
                         <div class="mt-4">
@@ -74,36 +74,12 @@
                             </div>
                         </div>
                         <div class="mt-4">
-                            <label class="block text-sm font-medium text-gray-700 text-right">صورة الطالب</label>
+                            <label class="block text-sm font-medium text-gray-700 text-right">صورة التدريسي</label>
                             <div class="mt-1">
                                 <input type="file" name="name" id="name" wire:model="image_path"
                                     class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
-                                    placeholder="المعرف" required>
+                                     required>
                             </div>
-                        </div>
-                        <div class="mt-4">
-                            <label class="block text-sm font-medium text-gray-700 text-right">
-                                الصف
-                            </label>
-                            <select wire:model='section_id'
-                                class="block w-full py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm">
-                                <option >اختر الصف</option>
-                                @foreach ($sections as $section)
-                                    <option value="{{ $section->id }}">{{ $section->name }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="mt-4">
-                            <label class="block text-sm font-medium text-gray-700 text-right">
-                                الشعبة
-                            </label>
-                            <select wire:model='group_id'
-                                class="block w-full py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm">
-                                <option >اختر شعبة</option>
-                                @foreach ($groups as $group)
-                                    <option value="{{ $group->id }}">{{ $group->name }}</option>
-                                @endforeach
-                            </select>
                         </div>
                         <button type="submit"
                             class="text-white bg-primary-100 font-medium rounded-lg w-full text-sm px-5 py-2.5 mr-2 mb-2 mt-6">أضافة</button>

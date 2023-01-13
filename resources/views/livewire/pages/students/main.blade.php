@@ -20,7 +20,6 @@
                 </select>
         </div>
         @livewire('pages.sections.add-student')
-
     </div>
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 mt-10 gap-x-8 gap-y-4">
         @foreach ($students as $student)
