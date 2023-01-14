@@ -22,4 +22,11 @@
     <div class="mb-20">
         @livewire('pages.profile.records')
     </div>
+    <div class="flex gap-x-8">
+        @livewire('pages.profile.edit-student', ['id' => $student->id])
+        <button wire:click='deleteStudent({{ $student->id }})' class="bg-red-400 text-gray-100 w-40 h-10">
+            حذف حساب الطالب
+        </button>
+    </div>
+
 </div>

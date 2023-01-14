@@ -32,7 +32,7 @@
                 </div>
                 <div class="flex flex-col gap-y-3 mt-4">
                     @foreach($systemNotifications as $notification)
-                    <div class="border-2 border-secondary-200 h-auto w-auto">{{ $notification->message }}</div>
+                    <div class="border-2 border-secondary-200 h-auto w-auto p-2 rounded-md">{{ $notification->message }}</div>
                     @endforeach
                 </div>
             </div>
