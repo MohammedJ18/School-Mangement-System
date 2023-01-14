@@ -38,12 +38,14 @@ class DatabaseSeeder extends Seeder
             SystemNotificationSeeder::class,
         ]);
 
-        // Lesson::factory()->count(400)->create();
-        // StudentAbsence::factory()->count(10)->create();
+        
+
         User::factory()->count(300)->create();
         Student::factory()->count(300)->create();
         Teacher::factory()->count(34)->create();
         Guardian::factory()->count(450)->create();
+        StudentAbsence::factory()->count(25)->create();
+        Lesson::factory()->count(400)->create();
 
     }
 }

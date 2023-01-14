@@ -17,9 +17,10 @@ class StudentAbsenceFactory extends Factory
     public function definition()
     {
         return [
-            'student_id' => $this->faker->numberBetween(1, 2),
-            'user_id' => $this->faker->numberBetween(1, 4),
-            'date' => $this->faker->date(),
+            'student_id' => $this->faker->numberBetween(1, 250),
+            'user_id' => $this->faker->numberBetween(1, 250),
+            // date of NOW
+            'date' => $this->faker->date('2023-01-14', 'now'),
             'reason' => $this->faker->sentence(),
         ];
     }

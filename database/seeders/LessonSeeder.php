@@ -15,6 +15,5 @@ class LessonSeeder extends Seeder
      */
     public function run()
     {
-        
     }
 }
