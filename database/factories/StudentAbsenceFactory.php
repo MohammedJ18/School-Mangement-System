@@ -20,7 +20,7 @@ class StudentAbsenceFactory extends Factory
             'student_id' => $this->faker->numberBetween(1, 250),
             'user_id' => $this->faker->numberBetween(1, 250),
             // date of NOW
-            'date' => $this->faker->date('2023-01-14', 'now'),
+            'date' => $this->faker->date('2023-01-15', 'now'),
             'reason' => $this->faker->sentence(),
         ];
     }
